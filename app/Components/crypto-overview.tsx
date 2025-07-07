@@ -16,6 +16,7 @@ type GlobalData = {
   marketCapChange: number;
 };
 
+
 export function CryptoOverview() {
   const [globalData, setGlobalData] = useState<GlobalData>();
   const { data: globalMarketData, isLoading } = useGlobalMarket();
